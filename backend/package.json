@@ -1,0 +1,29 @@
+{
+  "name": "ticketingtoolbackend",
+  "version": "1.0.0",
+  "description": "Ticketing-Tool connection and operation with the database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test command working\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreis21/Ticketing-Tool.git"
+  },
+  "author": "Andrei-George Stelian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreis21/Ticketing-Tool/issues"
+  },
+  "homepage": "https://github.com/andreis21/Ticketing-Tool#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mariadb": "^3.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.4",
+    "sqlite3": "^5.0.11"
+  }
+}
