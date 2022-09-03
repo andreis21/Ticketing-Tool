@@ -40,6 +40,17 @@ const create = async (req, res) => {
     }
 }
 
+const update = async (req, res) => {
+    try {
+        var user = req.body
+        var id = req.params.id
+        User.update(user, id)
+        res.send({ msg: "User updated successfuly!" }).status(200)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 module.exports = {
-    fetchAllUsers, fetchByID, deleteByID, create
+    fetchAllUsers, fetchByID, deleteByID, create, update
 }
