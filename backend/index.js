@@ -14,5 +14,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static('uploads'))
 
 app.use('/api/users', require('./routes/userRoutes'))
+app.use('/api/tickets', require('./routes/ticketRoutes'))
 
 app.listen(port, () => console.log('Server listening on port', port, '...'))
